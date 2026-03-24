@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaidik Shingala - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF4',
+                        sage: '#4A6750',
+                        dark: '#1A1A1A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
+<body class="bg-cream text-dark font-sans antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav
+        class="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-dark text-gray-400 rounded-full px-8 py-4 shadow-2xl flex gap-8 items-center text-xs sm:text-sm font-medium tracking-wide w-max max-w-[95vw] overflow-x-auto">
+        <a href="#home" class="hover:text-white transition-colors text-white font-bold">HOME</a>
+        <a href="#about" class="hover:text-white transition-colors">ABOUT</a>
+        <a href="#experience" class="hover:text-white transition-colors">EXPERIENCE</a>
+        <a href="#skills" class="hover:text-white transition-colors">SKILLS</a>
+        <a href="#projects" class="hover:text-white transition-colors">PROJECTS</a>
+        <a href="#contact" class="hover:text-white transition-colors">CONTACT</a>
+    </nav>
+
+    <!-- Marquee -->
+    <div class="fixed top-[6rem] w-full z-40 py-2 pointer-events-none fade-edges">
+        <div class="marquee flex gap-12 font-bold text-sm tracking-widest text-dark/40 uppercase items-center">
+            <span class="flex items-center gap-2"><i data-lucide="stethoscope" class="w-4 h-4"></i> BIOMEDICAL SCIENCES
+                '29 @ UWATERLOO</span>
+            <span class="flex items-center gap-3 text-dark/60">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                    <span
+                        class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500 shadow-[0_0_10px_2px_rgba(34,197,94,0.6)]"></span>
+                </span>
+                SEEKING SUMMER '26 JOBS & INTERNSHIPS
+            </span>
+            <span class="flex items-center gap-2"><i data-lucide="stethoscope" class="w-4 h-4"></i> BIOMEDICAL SCIENCES
+                '29 @ UWATERLOO</span>
+            <span class="flex items-center gap-3 text-dark/60">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                    <span
+                        class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500 shadow-[0_0_10px_2px_rgba(34,197,94,0.6)]"></span>
+                </span>
+                SEEKING SUMMER '26 JOBS & INTERNSHIPS
+            </span>
+            <span class="flex items-center gap-2"><i data-lucide="stethoscope" class="w-4 h-4"></i> BIOMEDICAL SCIENCES
+                '29 @ UWATERLOO</span>
+            <span class="flex items-center gap-3 text-dark/60">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                    <span
+                        class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500 shadow-[0_0_10px_2px_rgba(34,197,94,0.6)]"></span>
+                </span>
+                SEEKING SUMMER '26 JOBS & INTERNSHIPS
+            </span>
+        </div>
+    </div>
+
+    <!-- Main Content wrapper -->
+    <main class="w-full">
+        <!-- Home Section -->
+        <section id="home"
+            class="min-h-screen flex items-center justify-center pt-32 pb-20 px-6 lg:px-12 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
+                <!-- Left: Polaroid -->
+                <div class="fade-up-element relative justify-self-center lg:justify-self-end w-full max-w-md">
+                    <div class="polaroid rounded-lg bg-white relative">
+                        <img src="main-portrait.jpg" alt="Vaidik Shingala"
+                            class="w-full h-[500px] object-cover rounded shadow-inner">
+                        <h2
+                            class="absolute top-8 left-8 text-gray-100 font-bold text-5xl drop-shadow-[0_4px_4px_rgba(0,0,0,0.7)] leading-tight">
+                            Vaidik<br>Shingala</h2>
+                    </div>
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="fade-up-element flex flex-col gap-6 max-w-xl">
+                    <p class="text-sage font-bold tracking-widest text-sm uppercase">Hey! I'm pursuing a BSC in</p>
+                    <h1 class="text-5xl lg:text-7xl font-bold text-sage leading-[1.1] tracking-tight">
+                        Biomedical<br>Sciences</h1>
+                    <p class="text-xl text-dark/80 leading-relaxed max-w-lg mt-4">
+                        at the University of Waterloo. I'm passionate about healthcare systems, Neurology, and bringing
+                        new <span class="font-serif italic text-4xl text-sage mx-1">Drug Delivery ideas to life</span>
+                        through impactful real-world applications.
+                    </p>
+
+                    <div
+                        class="mt-8 flex items-center gap-6 bg-white p-4 pr-8 rounded-full shadow-lg border border-gray-100 w-max">
+                        <a href="resume.pdf" target="_blank"
+                            class="flex items-center gap-2 group text-4xl font-bold text-dark hover:text-sage transition-colors ml-4">
+                            Resume
+                            <i data-lucide="arrow-up-right"
+                                class="w-8 h-8 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                        </a>
+                        <div class="w-px h-12 bg-gray-200 mx-4"></div>
+                        <div class="flex gap-4 items-center">
+                            <a href="mailto:vaidikshingala2@gmail.com"
+                                class="text-red-500 hover:scale-110 transition-transform"><i data-lucide="mail"
+                                    class="w-8 h-8"></i></a>
+                            <a href="https://www.instagram.com/vaidiks28" target="_blank"
+                                class="text-pink-600 hover:scale-110 transition-transform flex items-center justify-center"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-8 h-8">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                </svg></a>
+                            <a href="https://www.linkedin.com/in/vaidik-shingala-613718386/" target="_blank"
+                                class="text-blue-600 hover:scale-110 transition-transform flex items-center justify-center"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-8 h-8">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect width="4" height="12" x="2" y="9"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-sage text-cream py-32 px-6 lg:px-12 w-full">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-up-element flex flex-col gap-6">
+                    <h2 class="text-4xl font-bold tracking-tight">About Me</h2>
+                    <p class="text-lg leading-relaxed text-cream/90">
+                        I am a Biomedical Sciences student at the University of Waterloo focused on pursuing a career in
+                        medicine and advancing patient centered care through science and innovation. I am passionate
+                        about understanding how scientific discoveries translate into real clinical impacts, especially
+                        in areas like Tissue Regeneration and emerging medical technologies. I have explored this
+                        through science fair research on Tissue Regeneration and Drug Delivery Systems, strong
+                        performance in national chemistry competitions, and consistent involvement in mentorship and
+                        teaching roles.
+                        <br><br>
+                        Beyond academics, I invest in community leadership. I coach soccer to little kids, volunteer in
+                        STEAM environments, and bring people together by language and culture. I value discipline,
+                        communication, and empathy, and I carry these into every environment I'm a part of. At my core,
+                        I'm driven by curiousity, growth, and service. I am always looking for ways to learn deeply,
+                        contribute meaningfully, and make a lasting impact in healthcare.
+                    </p>
+                </div>
+                <div
+                    class="fade-up-element grid grid-cols-1 sm:grid-cols-2 gap-8 w-full place-items-center h-max mt-8 lg:mt-0">
+                    <div class="polaroid transform -rotate-2 w-full hover:z-10 transition-transform hover:scale-105">
+                        <img src="about1.jpg" class="w-full h-64 object-cover rounded shadow border border-gray-100"
+                            alt="About Photo 1">
+                    </div>
+                    <div
+                        class="polaroid !pb-4 transform rotate-1 w-full hover:z-10 transition-transform hover:scale-105">
+                        <img src="about2.jpg" class="w-full h-64 object-cover rounded shadow border border-gray-100"
+                            alt="About Photo 2">
+                    </div>
+                    <div
+                        class="polaroid transform -rotate-1 w-full sm:col-span-2 sm:w-2/3 hover:z-10 transition-transform hover:scale-105">
+                        <img src="about3.jpg" class="w-full h-64 object-cover rounded shadow border border-gray-100"
+                            alt="About Photo 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-32 px-6 lg:px-12 w-full max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-sage mb-12 fade-up-element text-center md:text-left">Education</h2>
+
+            <div class="flex flex-col gap-12 mb-24">
+                <!-- Education 1 -->
+                <div
+                    class="fade-up-element bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col md:flex-row gap-8 items-start hover:shadow-md transition-shadow">
+                    <div
+                        class="w-16 h-16 bg-white border border-gray-200 rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden p-1 shadow-inner">
+                        <img src="uw-logo.png" alt="UW Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1 w-full">
+                        <div class="flex justify-between flex-wrap gap-4 items-start w-full">
+                            <div>
+                                <h3 class="text-2xl font-bold text-dark">University of Waterloo</h3>
+                                <p class="text-gray-600 font-medium mt-1">Bachelor of Science, Biomedical Sciences</p>
+                            </div>
+                            <span
+                                class="bg-sage/10 text-sage px-4 py-2 rounded-full font-bold text-sm tracking-wide border border-sage/20">2025
+                                - 2029</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education 2 -->
+                <div
+                    class="fade-up-element bg-white rounded-3xl p-8 shadow-sm border border-gray-100 flex flex-col md:flex-row gap-8 items-start hover:shadow-md transition-shadow">
+                    <div
+                        class="w-16 h-16 bg-white border border-gray-200 rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden p-1 shadow-inner">
+                        <img src="grci-logo.png" alt="GRCI Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1 w-full">
+                        <div class="flex justify-between flex-wrap gap-4 items-start w-full">
+                            <div>
+                                <h3 class="text-2xl font-bold text-dark">Grand River Collegiate Institute</h3>
+                                <p class="text-gray-600 font-medium mt-1">Ontario Secondary School Diploma</p>
+                            </div>
+                            <span
+                                class="bg-sage/10 text-sage px-4 py-2 rounded-full font-bold text-sm tracking-wide border border-sage/20">2021
+                                - 2025</span>
+                        </div>
+                        <div class="mt-6 flex gap-2 flex-wrap">
+                            <span
+                                class="px-3 py-1 bg-gray-100 text-gray-600 border border-gray-200 rounded-full text-xs font-semibold">cGPA:
+                                94%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-4xl font-bold text-sage mb-12 fade-up-element text-center md:text-left">Experience</h2>
+
+            <div class="flex flex-col gap-12">
+                <!--experience 1-->>
+                <div
+                    class="fade-up-element bg-sage rounded-3xl p-8 shadow-sm flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-shadow text-white">
+                    <div
+                        class="w-16 h-16 bg-white rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden p-1 shadow-md">
+                        <img src="bioeng4youth.png" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1 w-full">
+                        <div class="flex justify-between flex-wrap gap-4 items-start w-full">
+                            <div>
+                                <h3 class="text-2xl font-bold">Outreach Intern
+                                </h3>
+                                <p class="text-cream/90 font-medium mt-1">Student Led Club That Works Globally</p>
+                            </div>
+                            <span
+                                class="bg-white/20 px-4 py-2 rounded-full font-bold text-sm tracking-wide border border-white/30">March
+                                2026 - Present</span>
+                        </div>
+                        <p class="mt-4 text-cream/80 leading-relaxed">We as Outreach Interns support BioMed4Youth’s
+                            presence across schools, nonprofits, and biomedical spaces. We help execute everything
+                            listed above — from service events and fundraisers to partnerships and local outreach
+                            campaigns — while gaining valuable leadership and communication experience along the way.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- experience 2 -->
+                <div
+                    class="fade-up-element bg-sage rounded-3xl p-8 shadow-sm flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-shadow text-white">
+                    <div
+                        class="w-16 h-16 bg-white rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden p-1 shadow-md">
+                        <img src="uw-logo.png" alt="UW Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1 w-full">
+                        <div class="flex justify-between flex-wrap gap-4 items-start w-full">
+                            <div>
+                                <h3 class="text-2xl font-bold">SLIMM: Student-Led Innovations in Medical Microrobotics
+                                </h3>
+                                <p class="text-cream/90 font-medium mt-1">University of Waterloo</p>
+                            </div>
+                            <span
+                                class="bg-white/20 px-4 py-2 rounded-full font-bold text-sm tracking-wide border border-white/30">March
+                                2026 - Present</span>
+                        </div>
+                        <p class="mt-4 text-cream/80 leading-relaxed">SLIMM (Student-Led Innovations in Medical
+                            Microrobotics), an interdisciplinary research initiative focused on advancing biomedical
+                            applications of wireless micro scale robotic systems. Engaged in exploring high impact
+                            healthcare applications, including targeted drug delivery, minimally invasive interventions,
+                            and precision diagnostics. Contributing to early stage concept development, experimental
+                            design, and literature-driven research aligned with emerging advancements in Biomedical
+                            Engineering and Microrobotics. Collaborating within a research focused team to investigate
+                            and prototype novel solutions, with exposure to modelling, system design, and lab based
+                            methodologies under academic mentorship.</p>
+                    </div>
+                </div>
+
+                <!-- experience 3 -->
+                <div
+                    class="fade-up-element bg-sage rounded-3xl p-8 shadow-sm flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-shadow text-white">
+                    <div
+                        class="w-16 h-16 bg-white rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden p-1 shadow-md">
+                        <img src="soccer-logo.png" alt="Soccer Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1 w-full">
+                        <div class="flex justify-between flex-wrap gap-4 items-start w-full">
+                            <div>
+                                <h3 class="text-2xl font-bold">Soccer Coach</h3>
+                                <p class="text-cream/90 font-medium mt-1">Summer FC</p>
+                            </div>
+                            <span
+                                class="bg-white/20 px-4 py-2 rounded-full font-bold text-sm tracking-wide border border-white/30">June
+                                2024 - Sep 2024</span>
+                        </div>
+                        <p class="mt-4 text-cream/80 leading-relaxed">I coached soccer to toddlers aged 3-5 weekly
+                            during the summer break. My coaching partner and I arranged different sets of practices,
+                            drills, and mini-games every week and checked in on them to ensure they had their best time
+                            with us and learned something effective.</p>
+                    </div>
+                </div>
+
+                <!-- experience 4 -->
+                <div
+                    class="fade-up-element bg-sage rounded-3xl p-8 shadow-sm flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-shadow text-white">
+                    <div
+                        class="w-16 h-16 bg-white rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden p-1 shadow-md">
+                        <img src="ilp-logo.png" alt="ILP Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1 w-full">
+                        <div class="flex justify-between flex-wrap gap-4 items-start w-full">
+                            <div>
+                                <h3 class="text-2xl font-bold">Co-Teacher</h3>
+                                <p class="text-cream/90 font-medium mt-1">International Language Programs (ILP)</p>
+                            </div>
+                            <span
+                                class="bg-white/20 px-4 py-2 rounded-full font-bold text-sm tracking-wide border border-white/30">Sep
+                                2024 - Present</span>
+                        </div>
+                        <p class="mt-4 text-cream/80 leading-relaxed">I volunteer at the Gujarati school, assisting in
+                            teaching Grade 6-8 students by helping with class activities and providing support to
+                            enhance their learning. I also engage with students to ensure they stay focused and
+                            understand the material effectively.</p>
+                    </div>
+                </div>
+
+                <!-- experience 5 -->
+                <div
+                    class="fade-up-element bg-sage rounded-3xl p-8 shadow-sm flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-shadow text-white">
+                    <div
+                        class="w-16 h-16 bg-white rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden p-1 shadow-md">
+                        <img src="museum-logo.png" alt="Museum Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1 w-full">
+                        <div class="flex justify-between flex-wrap gap-4 items-start w-full">
+                            <div>
+                                <h3 class="text-2xl font-bold">Underground Studio Maker</h3>
+                                <p class="text-cream/90 font-medium mt-1">THEMUSEUM</p>
+                            </div>
+                            <span
+                                class="bg-white/20 px-4 py-2 rounded-full font-bold text-sm tracking-wide border border-white/30">Jan
+                                2023 - Sep 2024</span>
+                        </div>
+                        <p class="mt-4 text-cream/80 leading-relaxed">Provided guidance to children and youth in their
+                            STEAM (Science, Technology, Engineering, Art, and Math) projects. Actively worked as a
+                            mentor and with a tutor to organize activities that develop children's growth. Redirected
+                            students to encourage safe and positive behaviors (Physically and verbally).</p>
+                    </div>
+                </div>
+
+                <!-- experience 6 -->
+                <div
+                    class="fade-up-element bg-sage rounded-3xl p-8 shadow-sm flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-shadow text-white">
+                    <div
+                        class="w-16 h-16 bg-white rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden p-1 shadow-md">
+                        <img src="volunteer-logo.png" alt="Volunteer Logo" class="w-full h-full object-contain">
+                    </div>
+                    <div class="flex-1 w-full">
+                        <div class="flex justify-between flex-wrap gap-4 items-start w-full">
+                            <div>
+                                <h3 class="text-2xl font-bold">Youth Navigator</h3>
+                                <p class="text-cream/90 font-medium mt-1">Volunteer Waterloo Region</p>
+                            </div>
+                            <span
+                                class="bg-white/20 px-4 py-2 rounded-full font-bold text-sm tracking-wide border border-white/30">Feb
+                                2022 - June 2022</span>
+                        </div>
+                        <p class="mt-4 text-cream/80 leading-relaxed">Learned about Health, Equity and Belonging and
+                            shared our opinions about those categories, as well as participating in group conversations
+                            and minds-on activities.</p>
+                        <div class="mt-6 flex gap-2 flex-wrap">
+                            <span
+                                class="px-3 py-1 bg-white/10 rounded-full text-xs font-semibold border border-white/20">Social
+                                Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-32 px-6 lg:px-12 w-full max-w-7xl mx-auto text-center border-t border-gray-200">
+            <h2 class="text-4xl font-bold text-sage mb-16 fade-up-element">Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto fade-up-element">
+                <span
+                    class="px-6 py-3 bg-white border border-gray-200 rounded-full text-dark font-semibold shadow-sm hover:-translate-y-1 transition-transform cursor-default text-sm">Communication</span>
+                <span
+                    class="px-6 py-3 bg-white border border-gray-200 rounded-full text-dark font-semibold shadow-sm hover:-translate-y-1 transition-transform cursor-default text-sm">Leadership</span>
+                <span
+                    class="px-6 py-3 bg-white border border-gray-200 rounded-full text-dark font-semibold shadow-sm hover:-translate-y-1 transition-transform cursor-default text-sm">Initiative</span>
+                <span
+                    class="px-6 py-3 bg-white border border-gray-200 rounded-full text-dark font-semibold shadow-sm hover:-translate-y-1 transition-transform cursor-default text-sm">Innovative
+                    Thinking</span>
+                <span
+                    class="px-6 py-3 bg-white border border-gray-200 rounded-full text-dark font-semibold shadow-sm hover:-translate-y-1 transition-transform cursor-default text-sm">Public
+                    Speaking</span>
+                <span
+                    class="px-6 py-3 bg-white border border-gray-200 rounded-full text-dark font-semibold shadow-sm hover:-translate-y-1 transition-transform cursor-default text-sm">First
+                    AID</span>
+                <span
+                    class="px-6 py-3 bg-white border border-gray-200 rounded-full text-dark font-semibold shadow-sm hover:-translate-y-1 transition-transform cursor-default text-sm">People
+                    Development</span>
+                <span
+                    class="px-6 py-3 bg-white border border-gray-200 rounded-full text-dark font-semibold shadow-sm hover:-translate-y-1 transition-transform cursor-default text-sm">Thrive
+                    to Learn</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-32 px-6 lg:px-12 w-full max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-sage mb-16 fade-up-element text-center">Projects</h2>
+
+            <div class="flex justify-center w-full max-w-5xl mx-auto">
+                <div
+                    class="fade-up-element w-full bg-sage rounded-[3rem] p-8 md:p-12 text-white shadow-xl flex flex-col gap-8 group">
+                    <div class="overflow-hidden rounded-[2.5rem] border-4 border-white/10">
+                        <img src="project-board.jpg" alt="Tissue Regeneration Project Board"
+                            class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 max-h-[600px]">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h3 class="text-3xl md:text-4xl font-bold text-center">Tissue Regeneration Using Magnetic Fields
+                        </h3>
+                        <p class="text-cream/90 leading-relaxed font-medium text-lg text-center md:text-left">
+                            My project explores a potential method to accelerate tissue regeneration using iron oxide
+                            nanoparticles coated with bioactive molecules. These particles are designed to promote cell
+                            growth and healing when guided to a wound site using an external magnetic field. The idea is
+                            that once inside the body, the particles would be directed to the injured area, where they
+                            could release growth-promoting compounds to speed up tissue repair.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="min-h-screen flex items-center pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
+                <div class="fade-up-element flex flex-col gap-10">
+                    <h2 class="text-6xl lg:text-7xl font-bold text-sage leading-[1.1] tracking-tight">Contact
+                        me<br>anytime,<br><span class="font-serif italic text-dark">I'd love</span> to chat!</h2>
+
+                    <div class="flex flex-col gap-6">
+                        <a href="mailto:hello@example.com"
+                            class="text-2xl font-semibold text-dark hover:text-sage transition-colors flex items-center gap-4 border-b-2 border-dark/10 pb-4 w-max">
+                            <i data-lucide="mail"></i> vaidikshingala2@gmail.com
+                        </a>
+                        <div class="flex gap-4 items-center mt-4">
+                            <a href="https://www.instagram.com/vaidiks28" target="_blank"
+                                class="w-14 h-14 border border-gray-200 bg-white text-pink-600 rounded-full flex items-center justify-center shadow hover:scale-110 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-6 h-6">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/vaidik-shingala-613718386/" target="_blank"
+                                class="w-14 h-14 border border-gray-200 bg-white text-blue-600 rounded-full flex items-center justify-center shadow hover:scale-110 transition-transform">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-6 h-6">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect width="4" height="12" x="2" y="9"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="fade-up-element justify-self-center lg:justify-self-end w-full max-w-md hidden lg:block relative">
+                    <img src="main-portrait.jpg" alt="Portrait"
+                        class="w-full h-[600px] object-cover rounded-[4rem] shadow-2xl border border-gray-100 flex-shrink-0">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-12 text-center text-sm font-medium text-gray-500 border-t border-gray-200">
+            <p>© 2026 Vaidik Shingala. All rights reserved.</p>
+            <p class="mt-2 text-xs text-gray-400">Designed with precision</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
